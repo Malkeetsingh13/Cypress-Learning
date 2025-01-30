@@ -1,4 +1,4 @@
-const cypress = require("cypress")
+//const cypress = require("cypress")
 
 export class registerPage {
 
@@ -11,13 +11,13 @@ export class registerPage {
         password: '#input-password',
         confirmPassword: '#input-confirm',
         policyCheckbox: 'input[type="checkbox"]',
-        continue: '.btn btn-primary',
+        continue: '.btn.btn-primary',
 
 }
 
 openURL(){
 
-cy.visit('/')
+cy.visit(Cypress.env('URL'))
 
 }
 
