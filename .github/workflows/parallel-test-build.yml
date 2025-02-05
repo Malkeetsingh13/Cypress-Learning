@@ -1,4 +1,4 @@
-name: Parallel Test Build
+name: Parallel  Test Build
 on: push
 jobs:
   Add-To-Cart-run:
@@ -14,9 +14,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
          command: npm run test:addToCart
- 
-   
-Reg-Flow-run:
+
+  Reg-Flow-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -29,5 +28,3 @@ Reg-Flow-run:
         uses: cypress-io/github-action@v5
         with:
          command: npm run test:registerFlow
-   
-  
